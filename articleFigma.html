@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>
+            Rico Schnell Portfolio
+        </title>
+        <meta charset="utf-8"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/article.css"/>
+
+    </head>
+    <body>
+        <div id="intro">
+            <a href="index.html" style="text-decoration: none; color:white">
+                <h1>Rico Schnell Portfolio</h1>
+                <h2>Digital Media Student at University of Bremen</h2>
+            </a>
+            
+        </div>
+        <div id="main">
+            <div id="row">
+                <article id="middle" class="main" style="padding-bottom: 100px;">
+                    <h3 class="main">
+                        Prototyping with Figma               
+                    </h3>
+                    <div id="carouselExample" class="carousel carousel-dark slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/smartphone 4.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/smartphone.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/smartphone2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/smartphone3.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/smartphone5.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"   type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+                          <span class="visually-hidden" >Next</span>
+                        </button>
+                      </div>
+
+
+                        <!--
+                       <img class="mySlides" src="images/smartphone 4.png">
+                        <img class="mySlides" src="images/smartphone.png">
+                        <img class="mySlides" src="images/smartphone2.png">
+                        <img class="mySlides" src="images/smartphone3.png">
+                        <img class="mySlides" src="images/Smartphone5.png">
+                        <button class="slidebutton" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="slidebutton" onclick="plusDivs(+1)">&#10095;</button>
+                        -->
+ 
+                    <p>
+                       Figma is a prototyping tool often used before the actual development
+                       process and is especially useful for making a prototype that is 
+                       visually appealing but does not cost that much development ressources.
+                       I often had contact with this program and started to gain experience with
+                       operating it.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
+        </script>
+        
+    </body>
+</html>
